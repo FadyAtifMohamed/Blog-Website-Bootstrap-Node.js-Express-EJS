@@ -1,0 +1,45 @@
+<%- include("partials/header-A-Login.ejs") %>
+
+<body class="home-Background">
+    <div class="container-fluid mt-5">
+            <div class="row justify-content-center">
+                                <div class="col-lg-9 mt-5">
+                                    <div class="card mb-1">
+                                        <div class="card-body mt-3">
+                                            <h2 class="card-title">The Reddits</h2>
+                                            <p class="card-text">I met the Reddits before we even started Y Combinator. 
+                                                In fact they were one of the reasons we started it.
+                                                YC grew out of a talk I gave to the Harvard Computer Society 
+                                                (the undergrad computer club) about how to start a startup. Everyone
+                                                else in the audience was probably local, but Steve and Alexis came up on the 
+                                                train from the University of Virginia, where they were seniors. Since they'd 
+                                                come so far I agreed to meet them for coffee. They told me about the startup 
+                                                idea we'd later fund them to drop: 
+                                                a way to order fast food on your cellphone.</p>
+                                            <div class="small text-muted">5/14/2024</div>
+                                        </div>   
+                                    </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <% posts.forEach((post, index) => { %>
+                                    <div class="card mb-1">
+                                        <div class="card-body mt-3">
+                                            <h2 class="card-title"><%= post.title %></h2>
+                                            <p class="card-text"><%= post.content %></p>
+                                            <div class="small text-muted"><%= post.date %></div>
+                                            <div class="d-flex">
+                                            <form action="/edit/<%= index %>" method="POST">
+                                                <button type="submit" class="btn btn-danger mt-2 me-2">Edit</button>
+                                            </form>
+                                            <form action="/delete/<%= index %>" method="POST">
+                                                <button type="submit" class="btn btn-danger mt-2">Delete</button>
+                                            </form>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                <% }); %>
+                            </div>
+        </div>
+    </div>
+</body>  
+</html>

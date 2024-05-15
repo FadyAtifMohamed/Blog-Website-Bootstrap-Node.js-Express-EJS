@@ -1,0 +1,69 @@
+.body-login
+{
+    background-color: #eee;
+    height: 100vh;
+}
+.gradient-custom-2 {
+    background: #fccb90;
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    } 
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+
+    .gradient-custom {
+        background: #f093fb;
+        background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+        background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+        }
+        
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+        }
+        .card-registration .select-arrow {
+        top: 13px;
+        }
+.container-fluid 
+{
+            height: 100vh;
+}
+.container-fluid img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.home-image{
+    max-height: 600px;
+}
+.mar-top
+{
+    background-color: #F8E8EE;
+    margin-top: -20% !important;
+}
+.mar-top>h1,h2
+{
+    font-family: sans-serif;
+    font-weight: bold !important;
+}
+.mar-top>p
+{
+    font-family: serif;
+    font-weight: bold;
+    font-size: large;
+}
+.home-body-color
+{
+    background-color: #F9F5F6;
+}
